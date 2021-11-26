@@ -73,7 +73,6 @@ if __name__ == "__main__":
 
     if args.optim == 'ours':
         config = dict(signed=args.signed,
-                      boxed=True,
                       cost_fn=args.cost_fn,
                       indices=args.indices,
                       weights=args.weights,
@@ -99,7 +98,6 @@ if __name__ == "__main__":
                       )
     elif args.optim == 'yin':
         config = dict(signed=args.signed,
-                      boxed=True,
                       cost_fn=args.cost_fn,
                       indices=args.indices,
                       weights=args.weights,
@@ -125,7 +123,6 @@ if __name__ == "__main__":
                       )
     elif args.optim == 'gen':
         config = dict(signed=args.signed,
-                      boxed=True,
                       cost_fn=args.cost_fn,
                       indices=args.indices,
                       weights=args.weights,
@@ -151,7 +148,6 @@ if __name__ == "__main__":
                       )
     elif args.optim == 'geiping':
         config = dict(signed=args.signed,
-                      boxed=True,
                       cost_fn=args.cost_fn,
                       indices=args.indices,
                       weights=args.weights,
@@ -177,7 +173,6 @@ if __name__ == "__main__":
                       )      
     elif args.optim == 'zhu':
         config = dict(signed=False,
-                      boxed=False,
                       cost_fn='l2',
                       indices='def',
                       weights='equal',

@@ -101,7 +101,6 @@ if __name__ == "__main__":
             torch.save(model.state_dict(), os.path.join(args.model_path, file))
 
     config = dict(signed=args.signed,
-                    boxed=True,
                     cost_fn=args.cost_fn,
                     indices=args.indices,
                     weights=args.weights,
