@@ -8,9 +8,6 @@ Federated Learning (FL) is a distributed learning framework, in which the local 
 
 <img src="./figures/main_result.png" width="60%">
 
-<!-- | ![space-1.jpg](./figures/main_result.png) | ![space-1.jpg](./figures/main_result.png) | 
-|:--:| :--:| 
-| *Space* | *Space* | -->
 ## Code
 The central file that contains the reconstruction algorithm can be found at ```inversefed/reconstruction_algorithms.py```. 
 
@@ -26,7 +23,7 @@ We included our conda environment as `environment.yml`, but do not use it direct
 
 To run experiments, you need to download ImageNet, FFHQ, or any dataset you want and provide its location. For FFHQ dataset, download json directory of https://github.com/DCGM/ffhq-features-dataset and move into your FFHQ dataset directory. Age in the attribute file will be used as label.
 
-For stylegan, we did not included pretrained models. You should bring your model and edit `inversefed/porting.py`.
+For stylegan, we did not included pretrained models. You should bring your model and edit `inversefed/porting.py`. For stylegan2 model and FFHQ dataset, you can download [this model](https://www.dropbox.com/s/k5ql7yyjl2i9dno/Gs.pth?dl=0) into `inversefed/genmodels/stylegan2/Gs.pth`. Note that the model is obtained from [other stylegan repo](https://github.com/adriansahlman/stylegan2_pytorch) and follows NVIDIA license. That is, it is restricted to non-commercial use only.
 
 
 ### Scripts
